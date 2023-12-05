@@ -1,5 +1,6 @@
 package org.lessons.java.geometria;
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,11 +12,15 @@ public class Main {
         System.out.println("Inserisci la lunghezza del rettangolo: ");
         int userWidth = scan.nextInt();
 
-        Rettangolo rettangolo = new Rettangolo(userHeight, userWidth);
+        Rettangolo userRectangle = new Rettangolo(userHeight, userWidth);
 
 
-        System.out.println("Il perimetro del rettangolo è: " + rettangolo.rectanglePerimeter() );
-        System.out.println("L'area del rettangolo è: " + rettangolo.rectangleArea());
+        System.out.println("Il perimetro del rettangolo è: " + userRectangle.rectanglePerimeter() );
+        System.out.println("L'area del rettangolo è: " + userRectangle.rectangleArea());
+
+        System.out.println("Ecco a te il tuo rettangolo amico!");
+        System.out.println(userRectangle.draw());
+
 
         scan.close();
     }

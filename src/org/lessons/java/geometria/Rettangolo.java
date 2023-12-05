@@ -17,5 +17,23 @@ public class Rettangolo {
         return height * width;
     }
 
+    String draw (){
+        String newDraw = new String();
+        for (int i = 1; i <= width; i++) {
+            System.out.print("0");
+        }
+        System.out.println();
+        for (int x = 1; x <= height - 2; x++) {
+            System.out.print("0");
+            for (int i = 1; i <= width - 2; i++) {
+                System.out.print(" ");
+            }
+            System.out.println("0");
+        }
+        for (int i = 1; i <= width; i++) {
+            System.out.print("0");
+        }
+        return newDraw;
 
+    }
 }
